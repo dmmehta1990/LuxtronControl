@@ -27,10 +27,10 @@ luxtron.measurement_poll_frequency=1; %sec
 luxtron.time_between_measurements=3; %sec
 
 % inform user of simple error related to specifying timing.
-if luxtron.measurement_poll_freqeuency > luxtron.time_between_measurements error('''luxtron.measurement_poll_freqeuency'' must be less than ''luxtron.time_between_measurements'''); end
+if luxtron.measurement_poll_frequency > luxtron.time_between_measurements error('''luxtron.measurement_poll_freqeuency'' must be less than ''luxtron.time_between_measurements'''); end
 
 % specify save directory for temperature recording
-luxtron.save_dir='C:\Users\Ryan2\Documents\MATLAB\Luxtron Control\data\';
+luxtron.save_dir=[pwd '\'];
 % Mac example:
 % luxtron.save_dir='/Users/eugene/temp/';
 
